@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    width: 100%;  /* Ensure it stretches full width */
+    position: fixed; /* Keep it at the top */
+    top: 0;
+    left: 0;
+    height: 60px; /* Adjust height if needed */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px; /* Adjust spacing */
+}
+
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    background-color: #0056b3;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-item:hover {
+    background-color: #003d80;
+}
+
+/* Push content down so it doesn't get hidden under the fixed navbar */
+body {
+    padding-top: 60px; /* Same as navbar height */
+}

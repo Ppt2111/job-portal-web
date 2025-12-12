@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: white !important; /* Force override any other background */
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw; /* Ensure it covers full width */
+    background: white;
+    padding: 0;
+    margin: 0;
+}
+
+.home-content {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 100vh; /* Ensures full middle section is covered */
+    background: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  /* Hero section styling */
+.hero-section {
+    width: 100%;
+    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+  
+  /* Main heading */
+.home-container h1 {
+    font-size: 3rem;
+    color: #213547;
+    margin-bottom: 10px;
+}
+  
+  /* Paragraph styling */
+.home-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+  
+  /* Navigation links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+  
+.nav-links a {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: #646cff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+  
+.nav-links a:hover {
+    background: #535bf2;
+}
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-container {
+      padding: 10px;
+    }
+  
+    .hero-section {
+      padding: 50px 20px;
+}
+  
+.nav-links {
+    flex-direction: column;
+    gap: 10px;
+}
+}
+  
